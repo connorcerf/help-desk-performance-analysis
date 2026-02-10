@@ -39,7 +39,7 @@ Systems issues generate the highest workload, making them the primary driver of 
 
 A **stacked bar chart** was used to visualize this distribution because it clearly compares each functional area and its contribution to overall ticket volume.
 
-![Tickets by Function](images/tickets_by_function.png)
+![Tickets by Function](../images/tickets_by_function.png)
 
 **Business implication:**  
 These areas should be prioritized for efficiency improvements, as they have the greatest impact on customer satisfaction and operational load.
@@ -60,7 +60,7 @@ This indicates:
 
 A **clustered column chart** was used to compare these categories side by side.
 
-![Days Open by Priority](images/days_open_by_priority.png)
+![Days Open by Priority](../images/days_open_by_priority.png)
 
 **Business implication:**  
 Low‑priority tickets need service‑level agreements to prevent excessive delays. High‑priority outliers should be reviewed to identify workflow issues or complex cases.
@@ -85,7 +85,7 @@ This pattern holds across Systems, Access/Login, Software, and Hardware.
 
 A **clustered column chart** was used to highlight these differences.
 
-![Satisfaction and FA Distribution](images/satisfaction_column_chart.png)
+![Satisfaction and FA Distribution](../images/satisfaction_column_chart.png)
 
 ---
 
@@ -107,7 +107,7 @@ The company should investigate why customers skip the survey and ensure the syst
 
 A **pie chart** was used because it clearly shows how satisfaction levels divide across the entire dataset.
 
-![Satisfaction Distribution](images/satisfaction_distribution.png)
+![Satisfaction Distribution](../images/satisfaction_distribution.png)
 
 ---
 

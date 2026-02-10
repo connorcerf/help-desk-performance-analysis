@@ -1,0 +1,49 @@
+# ============================
+# SYSTEM JUNK (ignore always)
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================
+# EXCEL TEMP & BACKUP FILES
+# ============================
+~$*.xlsx
+~$*.xls
+*.tmp
+
+# ============================
+# POWER BI TEMP, CACHE, AUTOSAVE
+# ============================
+*.pbix.lock
+*.pbix.autosave
+*.pbix.backup
+*.pbit.lock
+
+# Power BI cache folders
+AnalysisServicesWorkspaces/
+PowerBI_Temp/
+*.DataMashup
+*.DataModel
+*.DataMashupBackup
+
+# ============================
+# PYTHON / NOTEBOOKS (if used)
+# ============================
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ============================
+# ENVIRONMENT / SECRETS
+# ============================
+.env
+*.key
+*.pem
+
+# ============================
+# RAW DATA (optional)
+# ============================
+# data/raw/
+# data/original/
+# *.csv

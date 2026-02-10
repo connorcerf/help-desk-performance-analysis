@@ -29,6 +29,8 @@ High-priority tickets are resolved faster on average, while low-priority tickets
 
 ![Days Open by Priority](images/days_open_by_priority.png)
 
+![Days Open by Priority](images/max_days_open_by_priority.png)
+
 ### Customer Satisfaction Gaps
 Nearly 30% of tickets have an unknown satisfaction rating, limiting confidence in customer experience insights. Among recorded responses, satisfaction is polarized, with more users reporting highly satisfied or unsatisfied experiences.
 

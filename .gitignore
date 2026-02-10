@@ -1,5 +1,5 @@
 # ============================
-# SYSTEM JUNK (ignore always)
+# SYSTEM JUNK 
 # ============================
 .DS_Store
 Thumbs.db
@@ -28,7 +28,7 @@ PowerBI_Temp/
 *.DataMashupBackup
 
 # ============================
-# PYTHON / NOTEBOOKS (if used)
+# PYTHON / NOTEBOOKS 
 # ============================
 __pycache__/
 *.pyc
@@ -42,7 +42,7 @@ __pycache__/
 *.pem
 
 # ============================
-# RAW DATA (optional)
+# RAW DATA 
 # ============================
 # data/raw/
 # data/original/

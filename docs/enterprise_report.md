@@ -62,6 +62,8 @@ A **clustered column chart** was used to compare these categories side by side.
 
 ![Days Open by Priority](../images/days_open_by_priority.png)
 
+![Days Open by Priority](../images/max_days_open_by_priority.png)
+
 **Business implication:**  
 Low‑priority tickets need service‑level agreements to prevent excessive delays. High‑priority outliers should be reviewed to identify workflow issues or complex cases.
 

@@ -1,9 +1,9 @@
 # Enterprise Help‑Desk Performance Analysis Report
 
-## Executive Question
+## Business Question
 **How can the company improve the speed and effectiveness of help‑desk issue resolution to increase customer satisfaction and support future growth?**
 
-This report analyzes help‑desk performance using a cleaned dataset of 100,000 tickets. The goal is to understand which functional areas generate the most demand, how priority levels affect resolution speed, and how satisfaction varies across the organization. These insights directly support the CEO’s focus on improving resolution speed, increasing customer satisfaction, and identifying the root causes of delays.
+This report analyzes help‑desk performance using a cleaned dataset of 100,000 tickets. The goal is to understand which functional areas generate the most demand, how priority levels affect resolution speed, and how satisfaction varies across the organization. These insights directly support the company's focus on improving resolution speed, increasing customer satisfaction, and identifying the root causes of delays.
 
 ---
 
@@ -17,7 +17,8 @@ Before generating visuals or insights, the compiled Excel dataset required clean
 
 Once cleaned, the dataset was loaded into **Microsoft Power BI**. Power BI enabled the creation of visuals that highlight:
 
-- Average resolution times by priority  
+- Average resolution times by priority level
+- Max resolution times by priority level
 - Ticket volume by functional area  
 - Satisfaction patterns across the organization  
 
@@ -28,7 +29,7 @@ These visuals make performance trends easier for executives to interpret without
 ## Key Insights
 
 ### 1. Ticket Volume by Functional Area
-Breaking down tickets by the *Filed Against* category revealed where the help desk spends most of its time:
+Breaking down tickets by each functional area revealed where the help desk spends most of its time:
 
 - **Systems:** 40,035 tickets  
 - **Access/Login:** 29,921 tickets  

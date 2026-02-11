@@ -38,7 +38,7 @@ Breaking down tickets by each functional area revealed where the help desk spend
 
 Systems issues generate the highest workload, making them the primary driver of demand. Access/Login issues are the second largest category, suggesting that account management processes may need improvement.
 
-A **stacked bar chart** was used to visualize this distribution because it clearly compares each functional area and its contribution to overall ticket volume.
+A **bar chart** was used to visualize this distribution because it clearly compares each functional area and its contribution to overall ticket volume.
 
 ![Tickets by Function](../images/tickets_by_function.png)
 
@@ -59,7 +59,7 @@ This indicates:
 - Low‑priority tickets accumulate and linger, creating a backlog.  
 - A few high‑priority outliers remain open for unusually long periods, signaling potential bottlenecks.
 
-A **clustered column chart** was used to compare these categories side by side.
+Two **column charts** were used to compare these categories side by side.
 
 ![Days Open by Priority](../images/days_open_by_priority.png)
 

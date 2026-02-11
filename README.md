@@ -24,7 +24,7 @@ Systems and Access/Login generate the highest number of tickets, making them the
 
 ![Tickets by Function](images/tickets_by_function.png)
 
-### Resolution Time by Priority
+### Resolution Time by Priority Level
 High-priority tickets are resolved faster on average, while low-priority tickets remain open the longest, creating backlogs. A small number of high-priority tickets remain open much longer than expected, indicating potential bottlenecks.
 
 ![Days Open by Priority](images/days_open_by_priority.png)
@@ -48,4 +48,4 @@ Nearly 30% of tickets have an unknown satisfaction rating, limiting confidence i
 - GitHub (version control)
 
 ## Next Steps
-Future work could include deeper analysis of unsatisfied tickets by channel, root-cause analysis of long-running high-priority cases, and improvements to satisfaction data collection.
+Future work could include deeper analysis of unsatisfied tickets by channel, root-cause analysis of long-running high-priority level cases, and improvements to satisfaction data collection.

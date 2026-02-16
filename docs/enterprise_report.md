@@ -1,125 +1,151 @@
-# Enterprise Help‑Desk Performance Analysis Report
+# Enterprise Help-Desk Performance Analysis Report
 
-## Business Question
-**How can the company improve the speed and effectiveness of help‑desk issue resolution to increase customer satisfaction and support future growth?**
+---
 
-This report analyzes help‑desk performance using a cleaned dataset of 100,000 tickets. The goal is to understand which functional areas generate the most demand, how priority levels affect resolution speed, and how satisfaction varies across the organization. These insights directly support the company's focus on improving resolution speed, increasing customer satisfaction, and identifying the root causes of delays.
+## Overview
+
+This enterprise-level report analyzes 100,000 cleaned help-desk tickets to evaluate operational efficiency and its impact on customer satisfaction. The analysis identifies high-volume support areas, resolution bottlenecks, backlog accumulation, and gaps in customer feedback collection.
+
+The goal is to provide executive-ready insights that support faster resolution times, improved customer satisfaction, and scalable service operations.
+
+---
+
+## Business Problem
+
+Support teams must balance speed, prioritization, and quality of service. Without clear visibility into resolution patterns and satisfaction trends, inefficiencies can grow unnoticed.
+
+> **Primary Question:**  
+> How can the company improve the speed and effectiveness of help-desk issue resolution to increase customer satisfaction and support future growth?
+
+---
+
+## Dataset
+
+The dataset contains 100,000 help-desk tickets. Each record includes:
+
+- Functional area (Filed Against)
+- Priority level
+- Days open (resolution time)
+- Customer satisfaction rating
+
+This dataset connects operational metrics directly to customer outcomes.
 
 ---
 
 ## Data Preparation
-Before generating visuals or insights, the compiled Excel dataset required cleaning. This included:
 
-- Removing errors and invalid entries  
-- Standardizing formats  
-- Handling missing values  
-- Removing duplicate records  
+Before analysis, the dataset was cleaned in Microsoft Excel:
 
-Once cleaned, the dataset was loaded into **Microsoft Power BI**. Power BI enabled the creation of visuals that highlight:
+- Removed invalid and duplicate records  
+- Standardized categorical formats  
+- Handled missing values  
+- Validated resolution time entries  
 
-- Average resolution times by priority level
-- Max resolution times by priority level
+The cleaned dataset was then imported into Microsoft Power BI for visualization and analysis.
+
+Power BI dashboards were created to evaluate:
+
 - Ticket volume by functional area  
-- Satisfaction patterns across the organization  
-
-These visuals make performance trends easier for executives to interpret without reviewing raw data.
+- Average resolution time by priority level  
+- Maximum resolution time by priority level  
+- Satisfaction distribution patterns  
 
 ---
 
-## Key Insights
+## Operational Analysis
 
 ### 1. Ticket Volume by Functional Area
-Breaking down tickets by each functional area revealed where the help desk spends most of its time:
 
 - **Systems:** 40,035 tickets  
 - **Access/Login:** 29,921 tickets  
 - **Software:** 20,068 tickets  
 - **Login:** 9,976 tickets  
 
-Systems issues generate the highest workload, making them the primary driver of demand. Access/Login issues are the second largest category, suggesting that account management processes may need improvement.
-
-A **bar chart** was used to visualize this distribution because it clearly compares each functional area and its contribution to overall ticket volume.
+Systems generates the highest workload, followed by Access/Login. These two areas account for the majority of support demand.
 
 ![Tickets by Function](../images/tickets_by_function.png)
 
 **Business implication:**  
-These areas should be prioritized for efficiency improvements, as they have the greatest impact on customer satisfaction and operational load.
+Operational improvements in Systems and Access/Login will produce the largest impact on workload reduction and customer satisfaction.
 
 ---
 
 ### 2. Resolution Time by Priority Level
-Analyzing maximum and average days open for each priority level revealed an important pattern:
 
-- **Max days open:** Level 3 (High Priority) tickets remain open the longest.  
-- **Average days open:** Level 1 (Low Priority) tickets take the longest on average (8 days), while Level 3 averages only 6 days.
+**Maximum Days Open**
+- Level 3 (High Priority) contains the longest-running outliers.
 
-This indicates:
+**Average Days Open**
+- Level 1 (Low Priority): 8 days  
+- Level 3 (High Priority): 6 days  
 
-- High‑priority tickets are resolved faster on average, as expected.  
-- Low‑priority tickets accumulate and linger, creating a backlog.  
-- A few high‑priority outliers remain open for unusually long periods, signaling potential bottlenecks.
+This reveals three patterns:
 
-Two **column charts** were used to compare these categories side by side.
+- High-priority tickets are resolved faster on average  
+- Low-priority tickets accumulate and create backlog  
+- A small number of high-priority tickets remain open unusually long  
 
 ![Days Open by Priority](../images/days_open_by_priority.png)
 
-![Days Open by Priority](../images/max_days_open_by_priority.png)
+![Max Days Open by Priority](../images/max_days_open_by_priority.png)
 
 **Business implication:**  
-Low‑priority tickets need service‑level agreements to prevent excessive delays. High‑priority outliers should be reviewed to identify workflow issues or complex cases.
+Service-level expectations should be established for low-priority tickets. High-priority outliers require workflow review.
 
 ---
 
 ### 3. Satisfaction Levels by Functional Area
-A column chart comparing satisfaction levels across functional areas showed a consistent pattern:
+
+Across all functional areas:
 
 - **0 – Unknown** is the largest category  
-- **3 – Highly Satisfied** is the second largest  
+- **3 – Highly Satisfied** is second  
 - **1 – Unsatisfied** follows  
 - **2 – Satisfied** is the smallest group  
 
-This pattern holds across Systems, Access/Login, Software, and Hardware.
+![Satisfaction and FA Distribution](../images/satisfaction_column_chart.png)
 
 **Interpretation:**
 
-- Many customers do not leave a satisfaction rating.  
-- Those who do respond tend to be either very happy or very unhappy.  
-- Middle‑ground experiences may be underreported.  
-
-A **clustered column chart** was used to highlight these differences.
-
-![Satisfaction and FA Distribution](../images/satisfaction_column_chart.png)
+- A significant portion of customers do not complete surveys  
+- Respondents tend to be highly satisfied or highly dissatisfied  
+- Neutral experiences may be underreported  
 
 ---
 
 ### 4. Overall Satisfaction Distribution
-A pie chart summarizing all satisfaction levels shows:
 
 - **Unknown:** 30.21%  
 - **Highly Satisfied:** 29.06%  
 - **Satisfied:** 19.60%  
 - **Unsatisfied:** 21.12%  
 
-The 30% unknown category is a major concern. It reduces confidence in the satisfaction data and may hide underlying issues.
-
-**Business implication:**  
-The company should investigate why customers skip the survey and ensure the system reliably captures feedback. Additionally:
-
-- Analyze the 21.12% unsatisfied group for patterns (ticket type, channel, functional area).  
-- Leverage the highly satisfied group to identify best practices and potential testimonials.
-
-A **pie chart** was used because it clearly shows how satisfaction levels divide across the entire dataset.
-
 ![Satisfaction Distribution](../images/satisfaction_distribution.png)
+
+**Business implication:**
+
+- Survey non-response reduces reliability of performance measurement  
+- The 21.12% unsatisfied segment should be analyzed for common drivers  
+- The highly satisfied group may reveal repeatable best practices  
 
 ---
 
-## Conclusion
-The help desk has a strong foundation but faces several challenges that must be addressed to support future growth:
+## Business Recommendations
 
-- **Systems** and **Access/Login** generate the highest ticket volumes and should be prioritized for process improvements.  
-- **Low‑priority tickets** remain open too long, creating backlogs that reduce satisfaction.  
-- **High‑priority outliers** indicate workflow bottlenecks that require investigation.  
-- **Satisfaction data is incomplete**, with nearly one‑third of responses missing, making it difficult to trust the overall picture.
+- Prioritize Systems and Access/Login process improvements  
+- Implement service-level expectations (SLEs) for low-priority tickets  
+- Audit long-running high-priority tickets  
+- Improve satisfaction survey completion rates  
+- Analyze unsatisfied tickets for recurring patterns  
 
-By improving prioritization practices, reducing backlog in low‑priority tickets, and strengthening feedback collection, the company can significantly improve help‑desk efficiency and customer satisfaction.
+---
+
+## What This Report Demonstrates
+
+- Large dataset operational analysis (100,000 records)  
+- KPI evaluation (resolution time, backlog risk, CSAT)  
+- Identification of workflow inefficiencies  
+- Executive-level data storytelling using Power BI  
+- Translation of metrics into strategic recommendations  
+
+---
